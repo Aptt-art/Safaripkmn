@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "pokemon-solid";
+  src: url(assets/fonts/Pokemon\ Solid.ttf);
+}
+body {
+  font-family: "pokemon-solid";
+  -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 1px #3c23bb;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  color: #3c23bb;
+  text-align: center;
+}
+
+#currentZone {
+  font-size: 2em; /* Ajustez la taille de la police pour qu'elle soit égale à celle du h1 */
+  font-weight: bold; /* Si le h1 est en gras, vous pouvez ajouter cela */
+  margin: 0; /* Pour enlever les marges par défaut */
+  padding: 0; /* Pour enlever les remplissages par défaut */
+}
+
+h1 {
+  color: #ffcc00;
+  font-family: "pokemon-solid";
+  -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 2px #3c23bb;
+}
+
+#pokemonList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "pokemon-solid";
+}
+
+.pokemon-item {
+  margin: 10px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  font-family: "pokemon-solid";
+  -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 1px #3c23bb;
+}
+
+.pokemon-item:hover {
+  transform: scale(1.05);
+}
+
+.result-message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.sound-controls {
+  margin-top: 10px;
+}
+.sound-controls button,
+.sound-controls #prevZone,
+.sound-controls #nextZone,
+.sound-controls #resetScores,
+.sound-controls #changePlayer {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.sound-controls button:hover,
+.sound-controls #prevZone:hover,
+.sound-controls #nextZone:hover,
+.sound-controls #resetScores:hover,
+.sound-controls #changePlayer:hover {
+  background-color: #ffb300;
+  transform: scale(1.05);
+}
+.sound-controls button:active,
+.sound-controls #prevZone:active,
+.sound-controls #nextZone:active,
+.sound-controls #resetScores:active,
+.sound-controls #changePlayer:active {
+  transform: scale(0.95);
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}/*# sourceMappingURL=style.css.map */

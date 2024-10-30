@@ -1,0 +1,47 @@
+{
+    "zones": {
+        "Montagne": {
+            "pokemons": [
+                {"name": "Pikachu", "img": "https://img.pokemondb.net/artwork/large/pikachu.jpg"},
+                {"name": "Onix", "img": "https://img.pokemondb.net/artwork/large/onix.jpg"},
+                {"name": "Golem", "img": "https://img.pokemondb.net/artwork/large/golem.jpg"}
+            ],
+            "background": "url('assets/images/Fantasy-Mountain-Landscape-Background-Hyper-Realistic-64527756-1.png')",
+            "captureRate": 0.2 
+        },
+        "Plage": {
+            "pokemons": [
+                {"name": "Tentacool", "img": "https://img.pokemondb.net/artwork/large/tentacool.jpg"},
+                {"name": "Krabby", "img": "https://img.pokemondb.net/artwork/large/krabby.jpg"},
+                {"name": "Psykokwak", "img": "https://img.pokemondb.net/artwork/large/psyduck.jpg"}
+            ],
+            "background": "url('assets/images/Plage.png')",
+            "captureRate": 0.4 
+        },
+        "Ville": {
+            "pokemons": [
+                {"name": "Roucool", "img": "https://img.pokemondb.net/artwork/large/pidgey.jpg"},
+                {"name": "Rattata", "img": "https://img.pokemondb.net/artwork/large/rattata.jpg"},
+                {"name": "Miaouss", "img": "https://img.pokemondb.net/artwork/large/meowth.jpg"}
+            ],
+            "background": "url('assets/images/Ville.webp')",
+            "captureRate": 0.3 
+        },
+        "Cimetière": {
+            "pokemons": [
+                {"name": "Fantominus", "img": "https://img.pokemondb.net/artwork/large/gastly.jpg"},
+                {"name": "Nosferpati", "img": "https://img.pokemondb.net/artwork/large/zubat.jpg"}
+            ],
+            "background": "url('assets/images/cimetière.webp')",
+            "captureRate": 0.1 
+        },
+        "Caverne": {
+            "pokemons": [
+                {"name": "Racaillou", "img": "https://img.pokemondb.net/artwork/large/geodude.jpg"},
+                {"name": "Nosferapti", "img": "https://img.pokemondb.net/artwork/large/zubat.jpg"}
+            ],
+            "background": "url('assets/images/grotte-souterraine-paysage-jungle_107791-26557.avif')",
+            "captureRate": 0.15 
+        }
+    }
+}

@@ -1,0 +1,127 @@
+@font-face {
+    font-family:"pokemon-solid";
+    src: url(assets/fonts/Pokemon\ Solid.ttf);
+    
+}
+
+// Déclaration des variables de couleur
+$background-color: rgba(255, 255, 255, 0.8);
+$highlight-color: #ffcc00;
+$highlight-hover: #ffb300;
+$text-color: #3c23bb;
+$error-color: #ff0000;
+$border-color: #ccc;
+
+
+
+body {
+    font-family:"pokemon-solid";
+   
+  -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 1px #3c23bb;
+    background-size: cover; // L'image couvre tout l'arrière-plan
+    background-position: center; // Centrer l'image
+    background-repeat: no-repeat; // Ne pas répéter l'image
+    height: 100vh; // Prendre toute la hauteur de la fenêtre
+    margin: 0; // Enlever les marges par défaut
+    color: $text-color; // Couleur du texte
+    text-align: center;
+}
+#currentZone {
+    font-size: 2em; /* Ajustez la taille de la police pour qu'elle soit égale à celle du h1 */
+    font-weight: bold; /* Si le h1 est en gras, vous pouvez ajouter cela */
+    margin: 0; /* Pour enlever les marges par défaut */
+    padding: 0; /* Pour enlever les remplissages par défaut */
+}
+h1 {
+    color: $highlight-color; // Couleur Pokémon
+    font-family:"pokemon-solid";
+
+  -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 2px #3c23bb;
+      }
+    
+
+
+#pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    font-family:"pokemon-solid";
+}
+
+
+%base_pokemon_item {
+    margin: 10px;
+    border: 2px solid $highlight-color;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: $background-color; // Fond semi-transparent
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    font-family:"pokemon-solid";
+   
+  -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 1px #3c23bb;
+
+}
+
+.pokemon-item {
+
+    @extend  %base_pokemon_item;
+
+ 
+    &:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+.result-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $error-color; // Rouge pour le résultat
+}
+
+.sound-controls {
+    margin-top: 10px;
+
+    button,
+    #prevZone,
+    #nextZone,
+    #resetScores,
+    #changePlayer {
+        background-color: $highlight-color; // Jaune Pokémon
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+        transition: background-color 0.3s, transform 0.2s;
+
+        &:hover {
+            background-color: $highlight-hover; // Jaune plus foncé au survol
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid $border-color;
+        padding: 8px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9); // Fond pour les cellules
+    }
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safari Pokémon</title>
+    <link rel="stylesheet" href="style.css" />
+    <img src="" alt="" />
+  </head>
+  <body>
+    <h1>Safari Pokémon</h1>
+    <div id="playerName">Joueur: Ash</div>
+    <div id="capturedCount">Capturés: 0</div>
+    <div id="score">Score: 0</div>
+
+    <div id="currentZone"></div>
+    <div id="pokemonList"></div>
+
+    <div id="result" class="result-message"></div>
+    <div id="pokeballCount">Pokéballs restantes: 10</div>
+
+    <div class="sound-controls">
+      <button id="muteButton">Couper le son</button>
+      <button id="volumeUpButton">Monter le son</button>
+      <button id="volumeDownButton">Baisser le son</button>
+      <button id="prevZone">Zone Précédente</button>
+      <button id="nextZone">Zone Suivante</button>
+      <button id="resetScores">Réinitialiser les scores</button>
+      <button id="changePlayer">Changer de joueur</button>
+    </div>
+
+    <h2>Tableau des Scores</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="scoreBody"></tbody>
+    </table>
+
+    <audio
+      id="captureSound"
+      src="assets/audios/Pokeball Capture.mp4.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="victorySound"
+      src="assets/audios/Pokemon Bleu Rouge Jaune Musique  - Victoire Vs Pokémon Sauvage.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
